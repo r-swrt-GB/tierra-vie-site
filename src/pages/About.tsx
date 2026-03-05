@@ -16,21 +16,21 @@ const About = () => {
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
             <p>
-              De La Vie Truffles was born from a deep love for the land and a fascination with one
-              of nature's most extraordinary creations. Located in the fertile soils of South
-              Africa, our farm is a pioneering venture that brings the art of European truffle
-              cultivation to the Southern Hemisphere.
+              De La Vie Truffles was born in 2019 from a deep love for the land and a fascination
+              with one of nature's most extraordinary creations. Located in the fertile soils of
+              South Africa, our farm is a pioneering venture cultivating Bianchetto white truffles
+              (Tuber borchii) in the Southern Hemisphere.
             </p>
             <p>
-              Our journey began with a simple question: could the rich, mineral soils of South
-              Africa nurture the same prized fungi that have captivated chefs and gourmands across
-              Europe for centuries? The answer, we discovered, was a resounding yes.
+              Our journey began with a simple question: could the rich soils of South Africa
+              nurture the same prized fungi that have captivated chefs and gourmands across Europe
+              for centuries? The answer, we discovered, was a resounding yes.
             </p>
             <p>
-              Today, our carefully planted oak orchards form the foundation of a sustainable
-              truffle farm. Every tree is inoculated with truffle spores and tended with care.
-              We practice organic, low-impact farming that works in harmony with the natural
-              ecosystem — no shortcuts, no compromises.
+              Today, our carefully planted orchards of Populus simonii and stone pine form the
+              foundation of a sustainable truffle farm. Every tree is inoculated with Bianchetto
+              truffle spores and tended with care. We practice organic, low-impact farming that
+              works in harmony with the natural ecosystem — no shortcuts, no compromises.
             </p>
           </div>
         </div>

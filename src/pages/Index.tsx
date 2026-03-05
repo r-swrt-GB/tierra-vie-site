@@ -22,10 +22,10 @@ const Index = () => {
             A Taste of the Extraordinary
           </h2>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            Nestled in the lush South African countryside, De La Vie Truffles cultivates some of the
-            finest black truffles outside of Europe. Our farm blends traditional European truffle
-            farming techniques with the unique terroir of South Africa to produce a truly
-            exceptional delicacy.
+            Since 2019, De La Vie Truffles has been cultivating prized Bianchetto white truffles
+            (Tuber borchii) in the South African countryside. Using Populus simonii and stone pine
+            as host trees, our farm brings the art of European truffle cultivation to the
+            Southern Hemisphere, producing a truly exceptional delicacy.
           </p>
         </div>
       </SectionWrapper>
@@ -36,7 +36,7 @@ const Index = () => {
           <div className="overflow-hidden rounded-lg">
             <img
               src={truffleCloseup}
-              alt="Fresh black truffle on forest soil"
+              alt="Fresh Bianchetto white truffle on forest soil"
               className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-500"
               loading="lazy"
             />
@@ -47,8 +47,9 @@ const Index = () => {
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Truffles are among the world's most prized culinary ingredients — rare underground fungi
-              that grow symbiotically with the roots of oak trees. Each truffle is a product of
-              patience, perfect soil conditions, and nature's own timing.
+              that grow symbiotically with the roots of host trees. Our Bianchetto white truffles
+              thrive alongside Populus simonii and stone pine, a product of patience, perfect soil
+              conditions, and nature's own timing.
             </p>
             <a
               href="/truffles"
@@ -68,9 +69,9 @@ const Index = () => {
               Rooted in Tradition
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Our oak orchards mirror the ancient truffières of France and Italy. With careful
-              cultivation, sustainable practices, and deep respect for the land, we bring the
-              European countryside tradition to African soil.
+              Our orchards of Populus simonii and stone pine mirror the truffières of Europe. Since
+              2019, with careful cultivation, sustainable practices, and deep respect for the land,
+              we've been bringing the European countryside tradition to African soil.
             </p>
             <a
               href="/about"
