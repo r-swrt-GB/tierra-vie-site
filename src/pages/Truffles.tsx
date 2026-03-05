@@ -6,19 +6,19 @@ import truffleCloseup from "@/assets/truffle-closeup.jpg";
 const truffleFacts = [
   {
     title: "What Are Truffles?",
-    text: "Truffles are a type of underground fungus that grows in symbiosis with the roots of certain trees, most notably oaks and hazelnuts. Unlike mushrooms, truffles grow entirely below the soil surface, making them notoriously difficult to find — traditionally requiring trained dogs or pigs to locate them by scent.",
+    text: "Truffles are a type of underground fungus that grows in symbiosis with the roots of certain trees. Unlike mushrooms, truffles grow entirely below the soil surface, making them notoriously difficult to find — traditionally requiring trained dogs to locate them by scent. At De La Vie, we cultivate the Bianchetto white truffle (Tuber borchii), a highly prized variety known for its delicate, garlicky aroma and earthy flavour.",
   },
   {
     title: "How Do They Grow?",
-    text: "Truffles form through a delicate mycorrhizal relationship with host trees. The tree provides sugars to the truffle, while the truffle enhances the tree's ability to absorb water and nutrients. This symbiosis requires specific soil conditions: alkaline, well-drained, calcium-rich soil with the right microbial balance. It takes 5–7 years from planting an inoculated tree before the first truffles appear.",
+    text: "Truffles form through a delicate mycorrhizal relationship with host trees. The tree provides sugars to the truffle, while the truffle enhances the tree's ability to absorb water and nutrients. At De La Vie, we use Populus simonii and stone pine as our host trees, inoculated with Bianchetto truffle spores. This symbiosis requires specific soil conditions and patience — it takes several years from planting before the first truffles appear.",
   },
   {
-    title: "Why Are They So Valuable?",
-    text: "Truffles are among the most expensive foods in the world, with some varieties fetching over $3,000 per kilogram. Their value stems from their rarity, the difficulty of cultivation, their short shelf life, and their incomparable flavour — an intense, earthy, umami-rich aroma that transforms any dish it touches.",
+    title: "Why Bianchetto?",
+    text: "The Bianchetto white truffle (Tuber borchii) is one of the most sought-after truffle varieties in the world. While smaller than its famous cousin the Alba white truffle, the Bianchetto offers a remarkable depth of flavour — earthy, garlicky, and subtly sweet. It is more adaptable to different climates and soils, making it ideal for cultivation in South Africa.",
   },
   {
     title: "Why South Africa?",
-    text: "South Africa's diverse climate zones include regions with conditions remarkably similar to the truffle-producing regions of France and Italy — cool winters, moderate rainfall, and alkaline soils. The Southern Hemisphere's opposite seasons also mean South African truffles mature during Europe's off-season, creating unique market opportunities.",
+    text: "South Africa's diverse climate zones include regions with conditions remarkably similar to the truffle-producing regions of Europe — cool winters, moderate rainfall, and suitable soils. The Southern Hemisphere's opposite seasons also mean South African truffles mature during Europe's off-season, creating unique market opportunities. De La Vie has been proving this since 2019.",
   },
 ];
 
@@ -27,7 +27,7 @@ const Truffles = () => {
     <Layout>
       <HeroSection
         image={truffleCloseup}
-        title="What Are Truffles?"
+        title="Bianchetto White Truffles"
         subtitle="The world's most treasured culinary ingredient."
       />
 

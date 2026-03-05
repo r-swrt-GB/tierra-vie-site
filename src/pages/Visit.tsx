@@ -21,9 +21,10 @@ const Visit = () => {
             Come See Where the Magic Happens
           </h2>
           <p className="text-muted-foreground leading-relaxed text-lg mb-8">
-            We welcome visitors by appointment. Walk through our oak orchards, learn about the
-            truffle cultivation process, and experience the tranquility of our farm. Whether
-            you're a chef, a food enthusiast, or simply curious — we'd love to show you around.
+            We welcome visitors by appointment. Walk through our orchards of Populus simonii and
+            stone pine, learn about Bianchetto white truffle cultivation, and experience the
+            tranquility of our farm. Whether you're a chef, a food enthusiast, or simply curious
+            — we'd love to show you around.
           </p>
 
           <div className="bg-card rounded-lg border border-border p-8 mb-8">
@@ -61,8 +62,8 @@ const Visit = () => {
               </p>
               <p>
                 <strong className="text-foreground">What to Expect:</strong> A guided walk
-                through our orchards, an introduction to truffle farming, and a chance to see (and
-                smell!) fresh truffles straight from the earth.
+                through our orchards, an introduction to Bianchetto white truffle farming, and a
+                chance to see (and smell!) fresh white truffles straight from the earth.
               </p>
             </div>
           </div>

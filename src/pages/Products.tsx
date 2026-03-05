@@ -5,15 +5,15 @@ import truffleProducts from "@/assets/truffle-products.jpg";
 
 const products = [
   {
-    name: "Fresh Black Truffles",
+    name: "Fresh Bianchetto White Truffles",
     description:
-      "Our signature product — freshly harvested Périgord black truffles (Tuber melanosporum), available seasonally during the South African winter months (June to August). Each truffle is hand-selected for quality and shipped with care.",
+      "Our signature product — freshly harvested Bianchetto white truffles (Tuber borchii), available seasonally during the South African winter months (June to August). Each truffle is hand-selected for quality and shipped with care. Grown in symbiosis with Populus simonii and stone pine host trees.",
     availability: "June – August (Winter Season)",
   },
   {
     name: "Truffle Oil",
     description:
-      "Coming soon — a cold-pressed truffle-infused oil made with locally sourced extra-virgin olive oil and our own farm-fresh truffles. Perfect for finishing dishes.",
+      "Coming soon — a cold-pressed truffle-infused oil made with locally sourced extra-virgin olive oil and our own farm-fresh Bianchetto white truffles. Perfect for finishing dishes.",
     availability: "Coming Soon",
   },
   {
