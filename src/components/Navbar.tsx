@@ -17,7 +17,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-cream-light/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#EBE0C3]/95 backdrop-blur-sm border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2 font-heading text-xl md:text-2xl font-semibold text-primary tracking-wide">
           <img src={logo} alt="De La Vie Truffles logo" className="h-10 md:h-12 w-auto" />
