@@ -1,13 +1,95 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import SectionWrapper from "@/components/SectionWrapper";
+import Layout from "@/components/Layout";
+import farmHero from "@/assets/farm-hero.jpg";
+import truffleCloseup from "@/assets/truffle-closeup.jpg";
+import oakForest from "@/assets/oak-tree-forest.jpg";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <HeroSection
+        image={farmHero}
+        title="De La Vie Truffles"
+        subtitle="Luxury truffles grown in the heart of South Africa."
+        showCta
+      />
+
+      {/* Intro */}
+      <SectionWrapper>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary mb-6">
+            A Taste of the Extraordinary
+          </h2>
+          <p className="text-muted-foreground leading-relaxed text-lg">
+            Nestled in the lush South African countryside, De La Vie Truffles cultivates some of the
+            finest black truffles outside of Europe. Our farm blends traditional European truffle
+            farming techniques with the unique terroir of South Africa to produce a truly
+            exceptional delicacy.
+          </p>
+        </div>
+      </SectionWrapper>
+
+      {/* About preview */}
+      <SectionWrapper alternate>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src={truffleCloseup}
+              alt="Fresh black truffle on forest soil"
+              className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <h2 className="font-heading text-3xl font-semibold text-primary mb-4">
+              Nature's Hidden Gem
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Truffles are among the world's most prized culinary ingredients — rare underground fungi
+              that grow symbiotically with the roots of oak trees. Each truffle is a product of
+              patience, perfect soil conditions, and nature's own timing.
+            </p>
+            <a
+              href="/truffles"
+              className="inline-block px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all"
+            >
+              Learn About Truffles
+            </a>
+          </div>
+        </div>
+      </SectionWrapper>
+
+      {/* Oak trees */}
+      <SectionWrapper>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="order-2 md:order-1">
+            <h2 className="font-heading text-3xl font-semibold text-primary mb-4">
+              Rooted in Tradition
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Our oak orchards mirror the ancient truffières of France and Italy. With careful
+              cultivation, sustainable practices, and deep respect for the land, we bring the
+              European countryside tradition to African soil.
+            </p>
+            <a
+              href="/about"
+              className="inline-block px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all"
+            >
+              Our Story
+            </a>
+          </div>
+          <div className="order-1 md:order-2 overflow-hidden rounded-lg">
+            <img
+              src={oakForest}
+              alt="Oak tree forest with dappled sunlight"
+              className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </SectionWrapper>
+    </Layout>
   );
 };
 
