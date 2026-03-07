@@ -3,10 +3,9 @@ import SectionWrapper from "@/components/SectionWrapper";
 import Layout from "@/components/Layout";
 import farmHero from "@/assets/farm-hero.jpg";
 import truffleCloseup from "@/assets/truffle-closeup.jpg";
-import oakForest from "@/assets/oak-tree-forest.jpg";
-import truffleProducts from "@/assets/truffle-products.jpg";
-import visitFarm from "@/assets/visit-farm.jpg";
-import { MapPin, Navigation, Phone, Mail, MessageCircle, Facebook } from "lucide-react";
+import productTruffles from "@/assets/product-truffles.jpg";
+import productButter from "@/assets/product-butter.jpg";
+import { MapPin, Navigation, Phone, Mail, MessageCircle, Facebook, Truck } from "lucide-react";
 
 const truffleFacts = [
   {
@@ -112,26 +111,60 @@ const Index = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper alternate>
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="overflow-hidden rounded-lg">
-            <img
-              src={farmHero}
-              alt="De La Vie farm landscape"
-              className="w-full h-64 md:h-80 object-cover rounded-lg"
-              loading="lazy"
-            />
+      {/* Products */}
+      <SectionWrapper id="products" alternate>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary mb-4 text-center">
+            Our Products
+          </h2>
+          <p className="text-muted-foreground text-lg text-center mb-4">
+            From earth to table — nature's finest.
+          </p>
+          <p className="text-center text-muted-foreground mb-12 flex items-center justify-center gap-2">
+            <Truck size={18} className="text-primary" />
+            We offer courier services — fresh truffles delivered to your door.
+          </p>
+
+          {/* Fresh Truffles — image left */}
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src={productTruffles}
+                alt="Fresh Bianchetto white truffles"
+                className="w-full h-64 md:h-80 object-cover rounded-lg hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-card rounded-lg p-8 border border-border">
+              <h3 className="font-heading text-2xl font-semibold text-primary mb-3">
+                {products[0].name}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">{products[0].description}</p>
+              <span className="inline-block text-sm font-medium text-secondary bg-muted px-4 py-1.5 rounded-full">
+                {products[0].availability}
+              </span>
+            </div>
           </div>
-          <div>
-            <h3 className="font-heading text-2xl font-semibold text-primary mb-4">
-              Sustainable & Natural
-            </h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Sustainability is at the heart of everything we do. From water-wise irrigation
-              systems to composting and biodiversity preservation, we ensure that our farming
-              practices leave the land better than we found it. Our truffles are a gift from
-              nature — and we treat them that way.
-            </p>
+
+          {/* Truffle Butter — image right */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="bg-card rounded-lg p-8 border border-border order-2 md:order-1">
+              <h3 className="font-heading text-2xl font-semibold text-primary mb-3">
+                {products[1].name}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">{products[1].description}</p>
+              <span className="inline-block text-sm font-medium text-secondary bg-muted px-4 py-1.5 rounded-full">
+                {products[1].availability}
+              </span>
+            </div>
+            <div className="overflow-hidden rounded-lg order-1 md:order-2">
+              <img
+                src={productButter}
+                alt="Fresh truffle butter"
+                className="w-full h-64 md:h-80 object-cover rounded-lg hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </SectionWrapper>
@@ -172,88 +205,28 @@ const Index = () => {
         </div>
       </SectionWrapper>
 
-      {/* Products */}
-      <SectionWrapper id="products" alternate>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary mb-4 text-center">
-            Our Products
-          </h2>
-          <p className="text-muted-foreground text-lg text-center mb-12">
-            From earth to table — nature's finest.
-          </p>
-          <div className="grid gap-8 md:gap-12">
-            {products.map((product) => (
-              <div
-                key={product.name}
-                className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow"
-              >
-                <h3 className="font-heading text-2xl font-semibold text-primary mb-3">
-                  {product.name}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">{product.description}</p>
-                <span className="inline-block text-sm font-medium text-secondary bg-muted px-4 py-1.5 rounded-full">
-                  {product.availability}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </SectionWrapper>
-
-      {/* Visit */}
+      {/* Visit / Location */}
       <SectionWrapper id="visit">
-        <div className="grid md:grid-cols-2 gap-10 items-center mb-12">
-          <div className="overflow-hidden rounded-lg">
-            <img
-              src={visitFarm}
-              alt="De La Vie truffle farm visit"
-              className="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-            />
-          </div>
-          <div>
-            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary mb-4">
-              Visit Us
-            </h2>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-              We welcome visitors by appointment. Walk through our orchards of inoculated Populus simonii and
-              stone pine, learn about Bianchetto white truffle cultivation, and experience the
-              tranquility of our farm.
-            </p>
-            <a
-              href="https://maps.google.com/?q=De+La+Vie+Truffles+South+Africa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all text-base"
-            >
-              <Navigation size={18} />
-              Open in Google Maps
-            </a>
-          </div>
-        </div>
-
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-card rounded-lg border border-border p-8">
-            <h3 className="font-heading text-xl font-semibold text-primary mb-4 text-center">
-              Planning Your Visit
-            </h3>
-            <div className="space-y-4 text-muted-foreground text-left max-w-lg mx-auto">
-              <p>
-                <strong className="text-foreground">Appointments:</strong> All visits are by
-                appointment only. Please contact us in advance to arrange a time.
-              </p>
-              <p>
-                <strong className="text-foreground">Truffle Season:</strong> The best time to
-                visit is during our winter harvest season (June – August) when you can witness a
-                live truffle hunt.
-              </p>
-              <p>
-                <strong className="text-foreground">What to Expect:</strong> A guided walk
-                through our orchards, an introduction to Bianchetto white truffle farming with inoculated
-                host trees, and a chance to see (and smell!) fresh white truffles straight from the earth.
-              </p>
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary mb-4">
+            Find Us
+          </h2>
+          <p className="text-muted-foreground text-lg mb-4">
+            Located in the heart of South Africa.
+          </p>
+          <p className="text-muted-foreground mb-8 flex items-center justify-center gap-2">
+            <Truck size={18} className="text-primary" />
+            We offer courier services — fresh truffles and truffle butter delivered to your door.
+          </p>
+          <a
+            href="https://maps.google.com/?q=De+La+Vie+Truffles+South+Africa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all text-base"
+          >
+            <Navigation size={18} />
+            Open in Google Maps
+          </a>
         </div>
       </SectionWrapper>
 
