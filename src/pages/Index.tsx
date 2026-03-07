@@ -3,10 +3,9 @@ import SectionWrapper from "@/components/SectionWrapper";
 import Layout from "@/components/Layout";
 import farmHero from "@/assets/farm-hero.jpg";
 import truffleCloseup from "@/assets/truffle-closeup.jpg";
-import oakForest from "@/assets/oak-tree-forest.jpg";
-import truffleProducts from "@/assets/truffle-products.jpg";
-import visitFarm from "@/assets/visit-farm.jpg";
-import { MapPin, Navigation, Phone, Mail, MessageCircle, Facebook } from "lucide-react";
+import productTruffles from "@/assets/product-truffles.jpg";
+import productButter from "@/assets/product-butter.jpg";
+import { MapPin, Navigation, Phone, Mail, MessageCircle, Facebook, Truck } from "lucide-react";
 
 const truffleFacts = [
   {
