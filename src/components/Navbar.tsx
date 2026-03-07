@@ -6,7 +6,7 @@ const navLinks = [
   { to: "about", label: "About" },
   { to: "truffles", label: "Truffles" },
   { to: "products", label: "Products" },
-  { to: "visit", label: "Visit Us" },
+  { to: "visit", label: "Find Us" },
   { to: "contact", label: "Contact" },
 ];
 
