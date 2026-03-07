@@ -111,26 +111,60 @@ const Index = () => {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper alternate>
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="overflow-hidden rounded-lg">
-            <img
-              src={farmHero}
-              alt="De La Vie farm landscape"
-              className="w-full h-64 md:h-80 object-cover rounded-lg"
-              loading="lazy"
-            />
+      {/* Products */}
+      <SectionWrapper id="products" alternate>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary mb-4 text-center">
+            Our Products
+          </h2>
+          <p className="text-muted-foreground text-lg text-center mb-4">
+            From earth to table — nature's finest.
+          </p>
+          <p className="text-center text-muted-foreground mb-12 flex items-center justify-center gap-2">
+            <Truck size={18} className="text-primary" />
+            We offer courier services — fresh truffles delivered to your door.
+          </p>
+
+          {/* Fresh Truffles — image left */}
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src={productTruffles}
+                alt="Fresh Bianchetto white truffles"
+                className="w-full h-64 md:h-80 object-cover rounded-lg hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-card rounded-lg p-8 border border-border">
+              <h3 className="font-heading text-2xl font-semibold text-primary mb-3">
+                {products[0].name}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">{products[0].description}</p>
+              <span className="inline-block text-sm font-medium text-secondary bg-muted px-4 py-1.5 rounded-full">
+                {products[0].availability}
+              </span>
+            </div>
           </div>
-          <div>
-            <h3 className="font-heading text-2xl font-semibold text-primary mb-4">
-              Sustainable & Natural
-            </h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Sustainability is at the heart of everything we do. From water-wise irrigation
-              systems to composting and biodiversity preservation, we ensure that our farming
-              practices leave the land better than we found it. Our truffles are a gift from
-              nature — and we treat them that way.
-            </p>
+
+          {/* Truffle Butter — image right */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="bg-card rounded-lg p-8 border border-border order-2 md:order-1">
+              <h3 className="font-heading text-2xl font-semibold text-primary mb-3">
+                {products[1].name}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">{products[1].description}</p>
+              <span className="inline-block text-sm font-medium text-secondary bg-muted px-4 py-1.5 rounded-full">
+                {products[1].availability}
+              </span>
+            </div>
+            <div className="overflow-hidden rounded-lg order-1 md:order-2">
+              <img
+                src={productButter}
+                alt="Fresh truffle butter"
+                className="w-full h-64 md:h-80 object-cover rounded-lg hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </SectionWrapper>
